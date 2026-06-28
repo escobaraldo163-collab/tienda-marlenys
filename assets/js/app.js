@@ -319,7 +319,16 @@ window.renderAdmin = async function(){
   };
   document.querySelector("#settingsForm").onsubmit=async(e)=>{
     e.preventDefault();
-    const payload={id:1,heroTitle:document.querySelector("#heroTitle").value,heroSubtitle:document.querySelector("#heroSubtitle").value,whatsapp:document.querySelector("#whatsapp").value,displayWhatsapp:document.querySelector("#whatsapp").value,direccion:document.querySelector("#direccion").value,horario:document.querySelector("#horario").value};
+    
+    const payload={
+  id:1,
+  herotitle:document.querySelector("#heroTitle").value,
+  herosubtitle:document.querySelector("#heroSubtitle").value,
+  whatsapp:document.querySelector("#whatsapp").value,
+  displaywhatsapp:document.querySelector("#whatsapp").value,
+  direccion:document.querySelector("#direccion").value,
+  horario:document.querySelector("#horario").value
+};
     const {error}=await CLIENT.from(SETTINGS_TABLE).upsert(payload);
     if(error) return alert(error.message);
     alert("Textos guardados correctamente.");

@@ -41,6 +41,10 @@ async function initSupabase(){
   try{
     if(typeof supabase !== "undefined" && supabase && supabase.from) CLIENT = supabase;
   }catch(e){}
+  
+  if(!CLIENT && window.marlenysSupabase){
+  CLIENT = window.marlenysSupabase;
+}
 
   if(!CLIENT && window.SUPABASE_CONFIG && window.supabase && !String(window.SUPABASE_CONFIG.url).includes("PEGA_AQUI")){
     CLIENT = window.supabase.createClient(window.SUPABASE_CONFIG.url, window.SUPABASE_CONFIG.anonKey);

@@ -1,0 +1,28 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/categoria/salas"
+  to = "/categoria/salas/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/categoria/comedores"
+  to = "/categoria/comedores/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/categoria/dormitorios"
+  to = "/categoria/dormitorios/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/categoria/electrodomesticos"
+  to = "/categoria/electrodomesticos/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/categoria/revasa"
+  to = "/categoria/revasa/index.html"
+  status = 200

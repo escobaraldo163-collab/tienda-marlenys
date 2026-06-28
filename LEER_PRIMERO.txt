@@ -1,0 +1,37 @@
+TIENDA MARLENYS - VERSIÓN ESTABLE FINAL
+
+Esta versión está hecha para evitar errores de compilación en Netlify.
+NO usa Next.js, NO usa TypeScript, NO necesita npm install.
+Es un sitio estático profesional: HTML + CSS + JavaScript.
+
+QUÉ INCLUYE:
+- Inicio
+- Salas de estar
+- Comedores
+- Dormitorios
+- Electrodomésticos
+- REVASA
+- Ubicación
+- WhatsApp
+- Buscador
+- Filtros
+- Páginas reales por categoría
+- Páginas reales por producto
+- Panel local admin.html
+- netlify.toml listo
+
+CÓMO REEMPLAZAR EN TU REPOSITORIO:
+1. Descomprime este ZIP.
+2. Abre la carpeta tienda-marlenys-version-estable-final.
+3. Copia TODO lo de adentro.
+4. Abre tu repositorio: Escritorio/tienda-marlenys.
+5. Borra el contenido anterior del proyecto, excepto la carpeta oculta .git y el archivo .gitattributes.
+6. Pega todo lo nuevo.
+7. Abre GitHub Desktop.
+8. Summary: Version estable final
+9. Commit to main.
+10. Push origin.
+
+CONFIGURACIÓN EN NETLIFY:
+Build command: dejar vacío
+Publish directory: .

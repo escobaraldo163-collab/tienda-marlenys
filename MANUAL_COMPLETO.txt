@@ -1,0 +1,84 @@
+MANUAL DE TIENDA MARLENYS - PLATAFORMA PROFESIONAL
+
+ESTA VERSIÓN INCLUYE
+- Next.js + React + Tailwind CSS.
+- Página principal moderna.
+- Categorías independientes:
+  /categoria/salas
+  /categoria/comedores
+  /categoria/dormitorios
+  /categoria/electrodomesticos
+  /categoria/revasa
+- Página de cada producto:
+  /producto/nombre-del-producto
+- Panel administrativo:
+  /admin
+- Botón de WhatsApp.
+- Preparada para Supabase.
+
+IMPORTANTE
+Esta versión NO se abre con doble clic. Es un proyecto profesional y necesita Node.js.
+
+PASO 1 - INSTALAR NODE.JS EN WINDOWS 11
+1. Entra a https://nodejs.org
+2. Descarga la versión LTS.
+3. Instálala.
+4. Reinicia la computadora si Windows lo pide.
+
+PASO 2 - ABRIR EL PROYECTO
+1. Descomprime este ZIP.
+2. Entra a la carpeta tienda-marlenys-plataforma.
+3. En la barra de dirección escribe:
+   cmd
+4. Presiona Enter.
+
+PASO 3 - INSTALAR
+En la ventana negra escribe:
+
+npm install
+
+PASO 4 - PROBAR
+Luego escribe:
+
+npm run dev
+
+Abre en Google Chrome:
+
+http://localhost:3000
+
+RUTAS PARA PROBAR
+Inicio:
+http://localhost:3000
+
+Salas:
+http://localhost:3000/categoria/salas
+
+Comedores:
+http://localhost:3000/categoria/comedores
+
+Dormitorios:
+http://localhost:3000/categoria/dormitorios
+
+Electrodomésticos:
+http://localhost:3000/categoria/electrodomesticos
+
+REVASA:
+http://localhost:3000/categoria/revasa
+
+Panel:
+http://localhost:3000/admin
+
+PANEL ADMINISTRATIVO
+El panel ya permite agregar, editar y eliminar productos en modo local.
+Los cambios se guardan en esa computadora usando localStorage.
+
+SIGUIENTE FASE
+Conectar Supabase para que los cambios se guarden en internet y puedas administrar desde cualquier computadora.
+
+
+VERIFICACIÓN REALIZADA
+- Existen páginas de Inicio, Categoría, Producto y Admin.
+- Existen imágenes base para todas las categorías.
+- Cada categoría tiene slug propio.
+- El menú usa rutas reales /categoria/[slug].
+- El panel /admin incluye formulario local para agregar, editar y eliminar productos.

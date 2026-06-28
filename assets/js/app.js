@@ -41,7 +41,7 @@ async function initSupabase(){
   try{
     if(typeof supabase !== "undefined" && supabase && supabase.from) CLIENT = supabase;
   }catch(e){}
-  
+
   if(!CLIENT && window.marlenysSupabase){
   CLIENT = window.marlenysSupabase;
 }
@@ -310,6 +310,7 @@ window.renderAdmin = async function(){
   document.querySelector("#editTexts").onclick=()=>{
     const panel=document.querySelector("#settingsPanel");
     panel.style.display=panel.style.display==="none"?"block":"none";
+    panel.scrollIntoView({behavior:"smooth", block:"start"});
     document.querySelector("#heroTitle").value=CURRENT_SETTINGS.heroTitle||"";
     document.querySelector("#heroSubtitle").value=CURRENT_SETTINGS.heroSubtitle||"";
     document.querySelector("#whatsapp").value=CURRENT_SETTINGS.whatsapp||"";
